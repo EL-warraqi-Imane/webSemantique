@@ -15,7 +15,7 @@
         </button>
         
         <div class="slide-counter">
-            <span id="currentSlide">1</span> / <span id="totalSlides">18</span>
+            <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
         </div>
         
         <button class="nav-btn" id="nextBtn">
@@ -29,782 +29,427 @@
 
     <!-- Slides Container -->
     <main class="slides-container" id="slidesContainer">
-        <!-- Slide 1: Couverture -->
+        
+        <!-- 0. Couverture -->
         <section class="slide active" id="slide1">
             <div class="slide-content">
                 <div class="slide-header">
                     <h1 class="main-title">Le Web Sémantique</h1>
                     <h2 class="subtitle">Définition, Origine, Objectifs et Technologies</h2>
                 </div>
-                
                 <div class="slide-body">
                     <div class="divider"></div>
-                    
-                    <p class="main-description">
-                        <strong>Comprendre l'évolution des données et de leur interconnexion</strong>
-                    </p>
+                    <p class="main-description"><strong>1. Introduction générale</strong></p>
                     
                     <div class="presenters">
-                        <div class="presenter-card">
-                            <i class="fas fa-user"></i>
-                            <span>Abdlah Boulidam</span>
-                        </div>
-                        <div class="presenter-card">
-                            <i class="fas fa-user"></i>
-                            <span>Youness Boumlik</span>
-                        </div>
-                        <div class="presenter-card">
-                            <i class="fas fa-user"></i>
-                            <span>Zakaria El Houari</span>
-                        </div>
-                        <div class="presenter-card">
-                            <i class="fas fa-user"></i>
-                            <span>Imane El Warraqi</span>
-                        </div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Abdellah BOULIDAM</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Youness BOUMLIK</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Oumaima EL ALAMI</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Zakaria EL HOUARI</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Imane EL WARRAQI</span></div>
                     </div>
                     
                     <div class="supervisor">
                         <i class="fas fa-chalkboard-teacher"></i>
-                        <span>Sous la supervision : Madame Nidal Lmeghari</span>
+                        <span>Encadré par : Mme Nidal LAMGHARI</span>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">1</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">1</span></footer>
         </section>
 
-        <!-- Slide 2: Introduction générale -->
+        <!-- 1. Introduction -->
         <section class="slide" id="slide2">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Introduction générale</h1>
+                    <h1 class="slide-title">1. Introduction générale</h1>
                 </div>
-                
                 <div class="slide-body">
                     <div class="definition-box">
                         <div class="definition-content">
-                            <p>Le <strong class="highlight">Web sémantique</strong> rend les informations compréhensibles par les machines</p>
-                            <p>grâce à des <strong class="highlight">métadonnées</strong> et des <strong class="highlight">relations sémantiques</strong>.</p>
+                            <p>Le <strong class="highlight">Web sémantique</strong> rend les informations compréhensibles par les machines grâce à des <strong class="highlight">métadonnées</strong>.</p>
                         </div>
                     </div>
-                    
                     <div class="divider"></div>
-                    
-                    <div class="definition-box">
-                        <div class="definition-content">
-                            <p>Il dépasse le Web traditionnel en reliant les données</p>
-                            <p>par leur <strong class="highlight">signification</strong>, et non seulement par des hyperliens.</p>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <p>Compréhension par la machine</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-share-alt"></i>
+                            <p>Interconnexion des données</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">2</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">2</span></footer>
         </section>
 
-        <!-- Slide 3: Web sémantique vs Web traditionnel -->
+        <!-- 2. Définition et comparaison -->
         <section class="slide" id="slide3">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Web sémantique vs Web traditionnel</h1>
+                    <h1 class="slide-title">2. Définition et comparaison</h1>
                 </div>
-                
                 <div class="slide-body">
                     <div class="comparison-container">
                         <div class="web-column classic-web">
                             <div class="web-header">
                                 <i class="fas fa-globe"></i>
-                                <h3>Web classique</h3>
+                                <h3>Web Classique</h3>
                             </div>
                             <ul class="features-list">
-                                <li>Relie des documents</li>
-                                <li>Basé sur des liens hypertextes</li>
-                                <li>Aucune compréhension du contenu par la machine</li>
+                                <li>Web de <strong>Documents</strong></li>
+                                <li>Liens hypertextes simples</li>
+                                <li>Pour les humains uniquement</li>
                             </ul>
                         </div>
-                        
-                        <div class="vs-separator">
-                            <span>VS</span>
-                        </div>
-                        
+                        <div class="vs-separator"><span>VS</span></div>
                         <div class="web-column semantic-web">
                             <div class="web-header">
-                                <i class="fas fa-brain"></i>
-                                <h3>Web sémantique</h3>
+                                <i class="fas fa-project-diagram"></i>
+                                <h3>Web Sémantique</h3>
                             </div>
                             <ul class="features-list">
-                                <li>Structure les données</li>
-                                <li>Ajoute du sens aux ressources</li>
-                                <li>Permet une interprétation automatique</li>
+                                <li>Web de <strong>Données</strong></li>
+                                <li>Relations sémantiques</li>
+                                <li>Exploitable par les machines</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">3</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">3</span></footer>
         </section>
 
-        <!-- Slide 4: Recherche intelligente -->
+        <!-- 3. Origine et évolution -->
         <section class="slide" id="slide4">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Recherche intelligente</h1>
+                    <h1 class="slide-title">3. Origine et évolution</h1>
                 </div>
-                
-                <div class="slide-body">
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <i class="fas fa-search-plus"></i>
-                            <p>Recherche basée sur le <strong>contexte</strong></p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <p>Exploitation des relations entre concepts</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-bullseye"></i>
-                            <p>Résultats plus précis et pertinents</p>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <i class="fas fa-comments"></i>
-                            <p>Moins d'ambiguïtés sémantiques</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">4</span>
-            </footer>
-        </section>
-
-        <!-- Slide 5: Vers le Web 3.0 et 4.0 -->
-        <section class="slide" id="slide5">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Vers le Web 3.0 et 4.0</h1>
-                </div>
-                
                 <div class="slide-body">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <span class="timeline-number">1.0</span>
-                            </div>
-                            <div class="timeline-content">
-                                <h4>Web 1.0</h4>
-                                <p>Statique</p>
-                            </div>
+                            <div class="timeline-marker"><span class="timeline-number">1.0</span></div>
+                            <div class="timeline-content"><h4>Web Statique</h4><p>Documents HTML</p></div>
                         </div>
-                        
                         <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <span class="timeline-number">2.0</span>
-                            </div>
-                            <div class="timeline-content">
-                                <h4>Web 2.0</h4>
-                                <p>Social</p>
-                            </div>
+                            <div class="timeline-marker"><span class="timeline-number">2.0</span></div>
+                            <div class="timeline-content"><h4>Web Social</h4><p>Interaction & Contenu</p></div>
                         </div>
-                        
                         <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <span class="timeline-number">3.0</span>
-                            </div>
-                            <div class="timeline-content">
-                                <h4>Web 3.0</h4>
-                                <p>Sémantique</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <span class="timeline-number">4.0</span>
-                            </div>
-                            <div class="timeline-content">
-                                <h4>Web 4.0</h4>
-                                <p>Intelligent et automatisé</p>
-                            </div>
+                            <div class="timeline-marker"><span class="timeline-number">3.0</span></div>
+                            <div class="timeline-content"><h4>Web Sémantique</h4><p>Données liées</p></div>
                         </div>
                     </div>
-                    
-                    <div class="conclusion-box">
-                        <p>Le Web sémantique prépare l'avenir du <strong>Web intelligent</strong>.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">5</span>
-            </footer>
-        </section>
-
-        <!-- Slide 6: Origine du Web Sémantique -->
-        <section class="slide" id="slide6">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Origine du Web Sémantique</h1>
-                </div>
-                
-                <div class="slide-body">
-                    <div class="transformation">
-                        <div class="from-box">
-                            <div class="box-header">
-                                <i class="fas fa-file-alt"></i>
-                                <h3>Web de documents</h3>
-                            </div>
-                            <p>Pages HTML reliées par des hyperliens</p>
-                        </div>
-                        
-                        <div class="arrow">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                        </div>
-                        
-                        <div class="to-box">
-                            <div class="box-header">
-                                <i class="fas fa-database"></i>
-                                <h3>Web de données</h3>
-                            </div>
-                            <p>Données structurées et interconnectées</p>
-                        </div>
-                    </div>
-                    
-                    <div class="objective-box">
-                        <p><strong>Objectif :</strong> rendre les données compréhensibles par les machines</p>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">6</span>
-            </footer>
-        </section>
-
-        <!-- Slide 7: Limites du Web traditionnel -->
-        <section class="slide" id="slide7">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Limites du Web traditionnel</h1>
-                </div>
-                
-                <div class="slide-body">
-                    <div class="limitations-grid">
-                        <div class="limitation-item">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            <p>Absence de compréhension du sens</p>
-                        </div>
-                        
-                        <div class="limitation-item">
-                            <i class="fas fa-cogs"></i>
-                            <p>Données non structurées</p>
-                        </div>
-                        
-                        <div class="limitation-item">
-                            <i class="fas fa-exchange-alt"></i>
-                            <p>Faible interopérabilité</p>
-                        </div>
-                        
-                        <div class="limitation-item">
-                            <i class="fas fa-robot"></i>
-                            <p>Exploitation automatique limitée</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">7</span>
-            </footer>
-        </section>
-
-        <!-- Slide 8: Évolution du Web -->
-        <section class="slide" id="slide8">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Évolution du Web</h1>
-                </div>
-                
-                <div class="slide-body">
-                    <table class="evolution-table">
-                        <thead>
-                            <tr>
-                                <th>Génération</th>
-                                <th>Caractéristique</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Web 1.0</strong></td>
-                                <td>Contenu statique</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Web 2.0</strong></td>
-                                <td>Interaction sociale</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Web 3.0</strong></td>
-                                <td>Données sémantiques</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Web 4.0</strong></td>
-                                <td>IA et automatisation</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">8</span>
-            </footer>
-        </section>
-
-        <!-- Slide 9: Vision de Tim Berners-Lee -->
-        <section class="slide" id="slide9">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Vision de Tim Berners-Lee</h1>
-                </div>
-                
-                <div class="slide-body">
-                    <div class="vision-grid">
+                    <div class="vision-grid" style="margin-top: 30px;">
                         <div class="vision-item">
-                            <i class="fas fa-link"></i>
-                            <p>Connecter les données de manière logique</p>
-                        </div>
-                        
-                        <div class="vision-item">
-                            <i class="fas fa-tags"></i>
-                            <p>Utiliser des métadonnées</p>
-                        </div>
-                        
-                        <div class="vision-item">
-                            <i class="fas fa-calculator"></i>
-                            <p>Faciliter le raisonnement automatisé</p>
-                        </div>
-                        
-                        <div class="vision-item">
-                            <i class="fas fa-robot"></i>
-                            <p>Permettre l'action autonome des machines</p>
+                            <i class="fas fa-user-astronaut"></i>
+                            <div>
+                                <h4>Vision de Tim Berners-Lee</h4>
+                                <p>Transformer le Web en une base de données globale où les agents logiciels peuvent "raisonner".</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">9</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">4</span></footer>
         </section>
 
-        <!-- Slide 10: Rôle des agents logiciels -->
-        <section class="slide" id="slide10">
+        <!-- 4. Pourquoi le Web sémantique ? (Problèmes) -->
+        <section class="slide" id="slide5">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Rôle des agents logiciels</h1>
+                    <h1 class="slide-title">4. Pourquoi le Web sémantique ?</h1>
+                    <h3 class="subtitle">Les problèmes du Web actuel</h3>
                 </div>
-                
-                <div class="slide-body">
-                    <div class="agent-list">
-                        <div class="agent-item">
-                            <i class="fas fa-search"></i>
-                            <p>Explorer différentes sources</p>
-                        </div>
-                        
-                        <div class="agent-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <p>Comprendre les relations</p>
-                        </div>
-                        
-                        <div class="agent-item">
-                            <i class="fas fa-check-circle"></i>
-                            <p>Prendre des décisions automatiques</p>
-                        </div>
-                        
-                        <div class="agent-item">
-                            <i class="fas fa-tasks"></i>
-                            <p>Exécuter des tâches complexes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">10</span>
-            </footer>
-        </section>
-
-        <!-- Slide 11: Applications clés -->
-        <section class="slide" id="slide11">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Applications clés du Web Sémantique</h1>
-                </div>
-                
-                <div class="slide-body">
-                    <div class="applications-grid">
-                        <div class="app-item">
-                            <i class="fas fa-heartbeat"></i>
-                            <span>Santé</span>
-                        </div>
-                        
-                        <div class="app-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Éducation</span>
-                        </div>
-                        
-                        <div class="app-item">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span>Commerce électronique</span>
-                        </div>
-                        
-                        <div class="app-item">
-                            <i class="fas fa-search"></i>
-                            <span>Recherche d'information</span>
-                        </div>
-                        
-                        <div class="app-item">
-                            <i class="fas fa-robot"></i>
-                            <span>Intelligence artificielle</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">11</span>
-            </footer>
-        </section>
-
-        <!-- Slide 12: Problèmes du Web actuel -->
-        <section class="slide" id="slide12">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Problèmes du Web actuel</h1>
-                </div>
-                
                 <div class="slide-body">
                     <div class="problems-grid">
                         <div class="problem-item">
-                            <i class="fas fa-key"></i>
+                            <i class="fas fa-search-minus"></i>
                             <div>
-                                <h4>Recherche basée sur mots-clés</h4>
-                                <p>Limitations dans la compréhension du contexte</p>
+                                <h4>Recherche par mots-clés</h4>
+                                <p>Manque de précision et ambiguïté (ex: "Jaguar" : animal ou voiture ?).</p>
                             </div>
                         </div>
-                        
                         <div class="problem-item">
-                            <i class="fas fa-question-circle"></i>
+                            <i class="fas fa-database"></i>
                             <div>
-                                <h4>Ambiguïtés sémantiques</h4>
-                                <p>Difficultés d'interprétation du sens</p>
+                                <h4>Données en silos</h4>
+                                <p>Information non structurée et difficile à croiser automatiquement.</p>
                             </div>
                         </div>
-                        
                         <div class="problem-item">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-robot"></i>
                             <div>
-                                <h4>Données non structurées</h4>
-                                <p>Information difficile à exploiter automatiquement</p>
-                            </div>
-                        </div>
-                        
-                        <div class="problem-item">
-                            <i class="fas fa-comment-alt"></i>
-                            <div>
-                                <h4>Manque de compréhension contextuelle</h4>
-                                <p>Incapacité à comprendre l'intention</p>
+                                <h4>Aveuglement machine</h4>
+                                <p>L'ordinateur affiche le contenu mais ne comprend pas sa signification.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">12</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">5</span></footer>
         </section>
 
-        <!-- Slide 13: Besoins et Objectifs -->
-        <section class="slide" id="slide13">
+        <!-- 4. Pourquoi le Web sémantique ? (Objectifs) -->
+        <section class="slide" id="slide6">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Besoins et Objectifs</h1>
+                    <h1 class="slide-title">4. Pourquoi le Web sémantique ?</h1>
+                    <h3 class="subtitle">Besoins et Objectifs</h3>
                 </div>
-                
                 <div class="slide-body">
                     <div class="needs-grid">
                         <div class="need-item">
-                            <div class="need-header">
-                                <i class="fas fa-exchange-alt"></i>
-                                <h4>Interopérabilité des données</h4>
-                            </div>
-                            <p>Permettre l'échange entre différents systèmes</p>
+                            <div class="need-header"><i class="fas fa-exchange-alt"></i><h4>Interopérabilité</h4></div>
+                            <p>Permettre aux différents systèmes de partager et réutiliser les données.</p>
                         </div>
-                        
                         <div class="need-item">
-                            <div class="need-header">
-                                <i class="fas fa-cogs"></i>
-                                <h4>Automatisation des processus</h4>
-                            </div>
-                            <p>Rendre les traitements plus efficaces</p>
+                            <div class="need-header"><i class="fas fa-cogs"></i><h4>Automatisation</h4></div>
+                            <p>Permettre aux agents logiciels d'exécuter des tâches complexes.</p>
                         </div>
-                        
                         <div class="need-item">
-                            <div class="need-header">
-                                <i class="fas fa-bullseye"></i>
-                                <h4>Amélioration de la précision</h4>
-                            </div>
-                            <p>Fournir des résultats plus exacts</p>
-                        </div>
-                        
-                        <div class="need-item">
-                            <div class="need-header">
-                                <i class="fas fa-comments"></i>
-                                <h4>Réduction des ambiguïtés</h4>
-                            </div>
-                            <p>Clarifier le sens des informations</p>
+                            <div class="need-header"><i class="fas fa-bullseye"></i><h4>Précision</h4></div>
+                            <p>Recherche contextuelle et réponses exactes.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">13</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">6</span></footer>
         </section>
 
-        <!-- Slide 14: Principes et concepts clés -->
-        <section class="slide" id="slide14">
+        <!-- 5. Principes et concepts clés -->
+        <section class="slide" id="slide7">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Principes et concepts clés</h1>
+                    <h1 class="slide-title">5. Principes et concepts clés</h1>
                 </div>
-                
                 <div class="slide-body">
                     <div class="principles-grid">
                         <div class="principle-item">
                             <h4><i class="fas fa-tags"></i> Métadonnées</h4>
-                            <p>Données sur les données pour décrire et structurer l'information</p>
+                            <p>Données décrivant d'autres données pour leur donner du sens.</p>
                         </div>
-                        
                         <div class="principle-item">
-                            <h4><i class="fas fa-link"></i> Relations sémantiques</h4>
-                            <p>Connexions significatives entre les concepts et entités</p>
+                            <h4><i class="fas fa-link"></i> Relations Sémantiques</h4>
+                            <p>Liens logiques entre entités (estUn, aPourAuteur, situeÀ).</p>
                         </div>
-                        
                         <div class="principle-item">
-                            <h4><i class="fas fa-project-diagram"></i> Graphes de connaissances</h4>
-                            <p>Représentation des connaissances sous forme de réseaux interconnectés</p>
+                            <h4><i class="fas fa-project-diagram"></i> Ontologies</h4>
+                            <p>Vocabulaires partagés définissant les concepts et leurs relations.</p>
                         </div>
-                        
                         <div class="principle-item">
-                            <h4><i class="fas fa-brain"></i> Raisonnement machine</h4>
-                            <p>Capacité des machines à déduire de nouvelles informations</p>
+                            <h4><i class="fas fa-brain"></i> Raisonnement</h4>
+                            <p>Capacité à déduire de nouvelles informations (Si A=B et B=C, alors A=C).</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">14</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">7</span></footer>
         </section>
 
-        <!-- Slide 15: Exemple concret -->
-        <section class="slide" id="slide15">
+        <!-- 6. Technologies associées -->
+        <section class="slide" id="slide8">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Exemple concret : Recherche intelligente</h1>
+                    <h1 class="slide-title">6. Technologies associées</h1>
                 </div>
-                
+                <div class="slide-body">
+                    <div class="technologies-container">
+                        <!-- RDF -->
+                        <div class="technology-item">
+                            <div class="tech-header">
+                                <div class="tech-icon"><i class="fas fa-cube"></i></div>
+                                <h3>RDF (Resource Description Framework)</h3>
+                            </div>
+                            <div class="tech-details">
+                                <p>Modèle de base sous forme de triplets : <strong>Sujet - Prédicat - Objet</strong>.</p>
+                                <div class="code-block">&lt;Film&gt; &lt;aPourRéalisateur&gt; &lt;Nolan&gt;</div>
+                            </div>
+                        </div>
+                        <!-- SPARQL -->
+                        <div class="technology-item">
+                            <div class="tech-header">
+                                <div class="tech-icon"><i class="fas fa-database"></i></div>
+                                <h3>SPARQL</h3>
+                            </div>
+                            <div class="tech-details">
+                                <p>Langage de requête pour interroger les bases de données RDF.</p>
+                            </div>
+                        </div>
+                        <!-- OWL -->
+                        <div class="technology-item">
+                            <div class="tech-header">
+                                <div class="tech-icon"><i class="fas fa-sitemap"></i></div>
+                                <h3>OWL (Web Ontology Language)</h3>
+                            </div>
+                            <div class="tech-details">
+                                <p>Langage pour définir des ontologies complexes et des règles logiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">8</span></footer>
+        </section>
+
+        <!-- 7. Applications et cas d’usage -->
+        <section class="slide" id="slide9">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">7. Applications et cas d’usage</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="detailed-applications">
+                        <div class="application-category">
+                            <div class="category-header"><i class="fas fa-heartbeat"></i><h3>Santé</h3></div>
+                            <ul class="category-details">
+                                <li>Interopérabilité des dossiers médicaux</li>
+                                <li>Aide au diagnostic par IA sémantique</li>
+                            </ul>
+                        </div>
+                        <div class="application-category">
+                            <div class="category-header"><i class="fas fa-search"></i><h3>Google Knowledge Graph</h3></div>
+                            <ul class="category-details">
+                                <li>Affichage d'encarts d'information structurés</li>
+                                <li>Réponses directes aux questions</li>
+                            </ul>
+                        </div>
+                        <div class="application-category">
+                            <div class="category-header"><i class="fas fa-shopping-cart"></i><h3>E-Commerce</h3></div>
+                            <ul class="category-details">
+                                <li>Comparateurs de prix précis</li>
+                                <li>Recommandations contextuelles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">9</span></footer>
+        </section>
+
+        <!-- 7. Applications (Exemple détaillé) -->
+        <section class="slide" id="slide10">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">7. Applications</h1>
+                    <h3 class="subtitle">Exemple : Web des données ouvertes (LOD)</h3>
+                </div>
                 <div class="slide-body">
                     <div class="example-details">
                         <div class="example-item">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-network-wired"></i>
                             <div>
-                                <h4>Compréhension du contexte</h4>
-                                <p>Analyse de l'intention derrière la requête</p>
+                                <h4>Linked Open Data</h4>
+                                <p>DBpedia, Wikidata : Des bases de connaissances géantes, libres et interconnectées.</p>
                             </div>
                         </div>
-                        
                         <div class="example-item">
-                            <i class="fas fa-list-ul"></i>
+                            <i class="fas fa-magic"></i>
                             <div>
-                                <h4>Résultats structurés</h4>
-                                <p>Organisation des informations de manière logique</p>
-                            </div>
-                        </div>
-                        
-                        <div class="example-item">
-                            <i class="fas fa-film"></i>
-                            <div>
-                                <h4>Relations entre entités</h4>
-                                <p>Liens entre films, acteurs, dates, réalisateurs</p>
-                            </div>
-                        </div>
-                        
-                        <div class="example-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <h4>Amélioration de la pertinence</h4>
-                                <p>Résultats plus précis et utiles</p>
+                                <h4>Innovation</h4>
+                                <p>Permet de créer des applications combinant météo, transport et événements sans créer de nouvelle base de données.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">15</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">10</span></footer>
         </section>
 
-        <!-- Slide 16: Technologies -->
-        <section class="slide" id="slide16">
+        <!-- 8. Limites et défis -->
+        <section class="slide" id="slide11">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Technologies du Web Sémantique</h1>
+                    <h1 class="slide-title">8. Limites et défis</h1>
                 </div>
-                
                 <div class="slide-body">
-                    <table class="tech-table">
-                        <thead>
-                            <tr>
-                                <th>Technologie</th>
-                                <th>Rôle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>RDF</strong></td>
-                                <td>Description des données sous forme de triplets</td>
-                            </tr>
-                            <tr>
-                                <td><strong>RDFS</strong></td>
-                                <td>Structure et vocabulaire pour organiser les données</td>
-                            </tr>
-                            <tr>
-                                <td><strong>OWL</strong></td>
-                                <td>Ontologies complexes et raisonnement avancé</td>
-                            </tr>
-                            <tr>
-                                <td><strong>SPARQL</strong></td>
-                                <td>Requêtes pour interroger les données RDF</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">16</span>
-            </footer>
-        </section>
-
-        <!-- Slide 17: Domaines d'application -->
-        <section class="slide" id="slide17">
-            <div class="slide-content">
-                <div class="slide-header">
-                    <h1 class="slide-title">Domaines d'application</h1>
-                </div>
-                
-                <div class="slide-body">
-                    <div class="domains-grid">
-                        <div class="domain-item">
-                            <i class="fas fa-search"></i>
-                            <h4>Moteurs de recherche intelligents</h4>
-                            <p>Google Knowledge Graph, recherche contextuelle</p>
+                    <div class="problems-grid">
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-hard-hat" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Complexité technique</h4>
+                                <p>Créer et maintenir des ontologies (OWL) est difficile et coûteux.</p>
+                            </div>
                         </div>
-                        
-                        <div class="domain-item">
-                            <i class="fas fa-robot"></i>
-                            <h4>Assistants virtuels</h4>
-                            <p>Siri, Alexa, Google Assistant</p>
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-users-slash" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Adoption lente</h4>
+                                <p>Manque d'experts qualifiés et investissement initial important pour les entreprises.</p>
+                            </div>
                         </div>
-                        
-                        <div class="domain-item">
-                            <i class="fas fa-heartbeat"></i>
-                            <h4>Santé</h4>
-                            <p>Diagnostic assisté, recherche médicale, dossiers électroniques</p>
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-balance-scale" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Qualité des données</h4>
+                                <p>Gérer la cohérence et la véracité des données provenant de sources multiples.</p>
+                            </div>
                         </div>
-                        
-                        <div class="domain-item">
-                            <i class="fas fa-shopping-cart"></i>
-                            <h4>Commerce électronique</h4>
-                            <p>Recommandations personnalisées, recherche produits</p>
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-bolt" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Performance</h4>
+                                <p>Le raisonnement sur des milliards de triplets nécessite une grande puissance de calcul.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">17</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">11</span></footer>
         </section>
 
-        <!-- Slide 18: Perspectives et Conclusion -->
-        <section class="slide" id="slide18">
+        <!-- 9. Perspectives et Conclusion -->
+        <section class="slide" id="slide12">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">Perspectives et Conclusion</h1>
+                    <h1 class="slide-title">9. Perspectives et Conclusion</h1>
                 </div>
-                
                 <div class="slide-body">
                     <div class="perspectives-grid">
                         <div class="perspective-item">
                             <i class="fas fa-robot"></i>
-                            <h4>Web autonome et intelligent</h4>
-                            <p>Vers un Web qui agit de manière autonome</p>
+                            <h4>Web Autonome</h4>
+                            <p>Des agents logiciels qui effectuent des tâches (réservations, achats) sans intervention humaine.</p>
                         </div>
-                        
                         <div class="perspective-item">
                             <i class="fas fa-brain"></i>
-                            <h4>Intégration avec l'IA</h4>
-                            <p>Combinaison du raisonnement symbolique et du machine learning</p>
+                            <h4>Convergence IA</h4>
+                            <p>Le Web Sémantique fournit la "connaissance" structurée nécessaire au Deep Learning.</p>
                         </div>
-                        
-                        <div class="perspective-item">
-                            <i class="fas fa-arrow-right"></i>
-                            <h4>Transition vers le Web 4.0</h4>
-                            <p>Évolution vers un Web plus intelligent et connecté</p>
-                        </div>
-                        
                         <div class="perspective-item">
                             <i class="fas fa-globe"></i>
-                            <h4>Transformation sociétale</h4>
-                            <p>Impact majeur sur tous les aspects de la société</p>
-                        </div>
-                    </div>
-                    
-                    <div class="final-statement">
-                        <div class="statement-text">
-                            <p>Le Web sémantique rend le Web</p>
-                            <h3>compréhensible, exploitable et intelligent</h3>
+                            <h4>Web 4.0</h4>
+                            <p>L'internet des objets (IoT) intelligent et interconnecté.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <footer class="slide-footer">
-                <span class="slide-number">18</span>
-            </footer>
+            <footer class="slide-footer"><span class="slide-number">12</span></footer>
         </section>
+
+        <!-- Slide Fin -->
+        <section class="slide" id="slide13">
+            <div class="slide-content">
+                <div class="slide-body">
+                    <div class="final-statement">
+                        <div class="statement-text">
+                            <h3>Merci de votre attention</h3>
+                            <p style="margin-top: 20px;">Avez-vous des questions ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">13</span></footer>
+        </section>
+
     </main>
 
     <!-- Slide Navigation Dots -->
-    <div class="slide-dots" id="slideDots">
-        <!-- Les points seront générés dynamiquement par JavaScript -->
-    </div>
+    <div class="slide-dots" id="slideDots"></div>
 
     <script src="js/script.js"></script>
 </body>
