@@ -706,43 +706,84 @@ body {
 }
 
 /* Slide 11 - Applications */
-.applications-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin-top: 40px;
+.section-intro {
+    font-size: 1.3em;
+    color: #4b5563;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 900px;
+    line-height: 1.6;
 }
 
-.app-item {
-    background: linear-gradient(135deg, #f0f4ff 0%, #e6f7ff 100%);
-    padding: 40px;
-    border-radius: 15px;
-    border: 2px solid #e0e7ff;
+.detailed-applications {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.application-category {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
-.app-item:hover {
+.application-category:hover {
     transform: translateY(-5px);
-    border-color: #667eea;
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
 }
 
-.app-item i {
-    font-size: 3em;
-    color: #667eea;
+.category-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.app-item span {
-    font-size: 1.4em;
-    color: #1a2980;
+.category-header i {
+    font-size: 2em;
+    color: white;
+}
+
+.category-header h3 {
+    color: white;
+    font-size: 1.8em;
     font-weight: 600;
-    text-align: center;
+    margin: 0;
+}
+
+.category-details {
+    padding: 25px;
+    list-style: none;
+}
+
+.category-details li {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-left: 4px solid #667eea;
+}
+
+.category-details li:last-child {
+    margin-bottom: 0;
+}
+
+.category-details li i {
+    color: #667eea;
+    font-size: 1.2em;
+    margin-top: 3px;
+}
+
+.category-details li strong {
+    color: #1a2980;
 }
 
 /* Slide 12 - Problèmes */
@@ -920,42 +961,161 @@ body {
 }
 
 /* Slide 16 - Technologies */
-.tech-table {
+.technologies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 100%;
-    max-width: 800px;
-    border-collapse: collapse;
-    margin-top: 40px;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.technology-item {
+    background: white;
+    border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-.tech-table th {
+.technology-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+}
+
+.tech-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tech-icon {
+    background: rgba(255, 255, 255, 0.2);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-icon i {
+    font-size: 1.8em;
     color: white;
-    padding: 25px;
-    text-align: left;
-    font-size: 1.3em;
+}
+
+.tech-header h3 {
+    color: white;
+    font-size: 1.6em;
     font-weight: 600;
+    margin: 0;
 }
 
-.tech-table td {
+.tech-details {
     padding: 25px;
-    border-bottom: 1px solid #e5e7eb;
-    font-size: 1.2em;
-    color: #374151;
 }
 
-.tech-table tr:last-child td {
-    border-bottom: none;
+.tech-details ul {
+    list-style: none;
 }
 
-.tech-table tr:nth-child(even) {
+.tech-details li {
+    padding: 15px;
+    margin-bottom: 15px;
     background: #f8fafc;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-left: 4px solid #667eea;
 }
 
-.tech-table tr:hover {
-    background: #eff6ff;
+.tech-details li:last-child {
+    margin-bottom: 0;
+}
+
+.tech-details li i {
+    color: #667eea;
+    font-size: 1.2em;
+    margin-top: 3px;
+}
+
+.tech-details li strong {
+    color: #1a2980;
+}
+
+.code-block {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1em;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+.tech-ecosystem {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.ecosystem-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e7ff;
+}
+
+.ecosystem-header:first-child {
+    margin-top: 10px;
+}
+
+.ecosystem-header i {
+    color: #667eea;
+    font-size: 1.5em;
+}
+
+.ecosystem-header h3 {
+    color: #1a2980;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.ecosystem-content {
+    padding: 15px 0;
+}
+
+.ecosystem-content p {
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.ecosystem-content ul {
+    list-style: none;
+}
+
+.ecosystem-content li {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ecosystem-content li i {
+    color: #667eea;
 }
 
 /* Slide 17 - Domaines */
@@ -1226,6 +1386,25 @@ body {
         border-radius: 50%;
         justify-content: center;
     }
+    
+    /* Responsive adjustments for enhanced sections */
+    .category-details li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .tech-details li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .ecosystem-content li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1255,5 +1434,22 @@ body {
     
     .slide-dots {
         display: none;
+    }
+    
+    /* Additional mobile adjustments */
+    .section-intro {
+        font-size: 1.1em;
+    }
+    
+    .category-header h3 {
+        font-size: 1.4em;
+    }
+    
+    .tech-header h3 {
+        font-size: 1.3em;
+    }
+    
+    .ecosystem-header h3 {
+        font-size: 1.2em;
     }
 }
