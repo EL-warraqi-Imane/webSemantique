@@ -39,7 +39,7 @@
                 </div>
                 <div class="slide-body">
                     <div class="divider"></div>
-                    <p class="main-description"><strong>1. Introduction générale</strong></p>
+                    <p class="main-description"><strong>Comprendre l'évolution des données et de leur interconnexion</strong></p>
                     
                     <div class="presenters">
                         <div class="presenter-card"><i class="fas fa-user"></i> <span>Abdellah BOULIDAM</span></div>
@@ -252,79 +252,101 @@
         </section>
 
         <!-- 6. Technologies associées -->
+<!-- Slide 8: Technologies associées (Amélioré) -->
         <section class="slide" id="slide8">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">6. Technologies associées</h1>
+                    <h1 class="slide-title">6. Technologies : La Pile Sémantique</h1>
+                    <h3 class="subtitle">Architecture en couches (W3C)</h3>
                 </div>
                 <div class="slide-body">
+                    <!-- Conteneur style "Pile" pour refléter l'image -->
                     <div class="technologies-container">
-                        <!-- RDF -->
+                        
+                        <!-- Couche Haute : SPARQL & OWL -->
                         <div class="technology-item">
                             <div class="tech-header">
-                                <div class="tech-icon"><i class="fas fa-cube"></i></div>
-                                <h3>RDF (Resource Description Framework)</h3>
+                                <div class="tech-icon"><i class="fas fa-search"></i></div>
+                                <h3>Couche d'Interrogation & Ontologie</h3>
                             </div>
                             <div class="tech-details">
-                                <p>Modèle de base sous forme de triplets : <strong>Sujet - Prédicat - Objet</strong>.</p>
-                                <div class="code-block">&lt;Film&gt; &lt;aPourRéalisateur&gt; &lt;Nolan&gt;</div>
+                                <ul>
+                                    <li><strong>OWL (Ontology Web Language) :</strong> Description poussée de la sémantique et des règles.</li>
+                                    <li><strong>SPARQL :</strong> Langage pour exécuter des requêtes précises dans les données.</li>
+                                </ul>
                             </div>
                         </div>
-                        <!-- SPARQL -->
-                        <div class="technology-item">
-                            <div class="tech-header">
-                                <div class="tech-icon"><i class="fas fa-database"></i></div>
-                                <h3>SPARQL</h3>
-                            </div>
-                            <div class="tech-details">
-                                <p>Langage de requête pour interroger les bases de données RDF.</p>
-                            </div>
-                        </div>
-                        <!-- OWL -->
-                        <div class="technology-item">
-                            <div class="tech-header">
+
+                        <!-- Couche Intermédiaire : RDFS (Mise en avant selon ton image) -->
+                        <div class="technology-item" style="border-left: 5px solid #e11d48;">
+                            <div class="tech-header" style="background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);">
                                 <div class="tech-icon"><i class="fas fa-sitemap"></i></div>
-                                <h3>OWL (Web Ontology Language)</h3>
+                                <h3>RDF Schema (RDFS)</h3>
                             </div>
                             <div class="tech-details">
-                                <p>Langage pour définir des ontologies complexes et des règles logiques.</p>
+                                <p><strong>Rôle :</strong> Décrire la <em>signification</em> de la donnée.</p>
+                                <p>Il permet de créer des vocabulaires légers (ex: définir qu'un "Chien" est un "Animal").</p>
                             </div>
                         </div>
+
+                        <!-- Couche Basse : RDF & URI (Mise en avant selon ton image) -->
+                        <div class="technology-item" style="border-left: 5px solid #d97706;">
+                            <div class="tech-header" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%);">
+                                <div class="tech-icon"><i class="fas fa-cube"></i></div>
+                                <h3>RDF & URI</h3>
+                            </div>
+                            <div class="tech-details">
+                                <ul>
+                                    <li><strong>RDF (Resource Description Framework) :</strong> Standard d'échange pour <em>décrire</em> la donnée (Triplets).</li>
+                                    <li><strong>URI (Identifiant) :</strong> La base fondamentale pour <em>coder</em> et identifier chaque ressource de manière unique sur le Web.</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <footer class="slide-footer"><span class="slide-number">8</span></footer>
         </section>
 
-        <!-- 7. Applications et cas d’usage -->
+        <!-- Slide 9: Applications et cas d’usage (Amélioré) -->
         <section class="slide" id="slide9">
             <div class="slide-content">
                 <div class="slide-header">
-                    <h1 class="slide-title">7. Applications et cas d’usage</h1>
+                    <h1 class="slide-title">7. Applications Concrètes</h1>
+                    <h3 class="subtitle">Où le Web Sémantique est-il utilisé aujourd'hui ?</h3>
                 </div>
                 <div class="slide-body">
                     <div class="detailed-applications">
+                        
+                        <!-- Knowledge Graph -->
                         <div class="application-category">
-                            <div class="category-header"><i class="fas fa-heartbeat"></i><h3>Santé</h3></div>
+                            <div class="category-header"><i class="fab fa-google"></i><h3>Moteurs de Recherche (Knowledge Graph)</h3></div>
                             <ul class="category-details">
-                                <li>Interopérabilité des dossiers médicaux</li>
-                                <li>Aide au diagnostic par IA sémantique</li>
+                                <li><strong>Avant :</strong> Recherche de chaînes de caractères ("Paris").</li>
+                                <li><strong>Maintenant :</strong> Compréhension de l'entité (Paris = Capitale).</li>
+                                <li><em>Résultat :</em> Les "Rich Snippets" et encadrés d'informations à droite des résultats Google.</li>
                             </ul>
                         </div>
+
+                        <!-- E-Commerce -->
                         <div class="application-category">
-                            <div class="category-header"><i class="fas fa-search"></i><h3>Google Knowledge Graph</h3></div>
+                            <div class="category-header"><i class="fas fa-tags"></i><h3>E-Commerce & SEO (Schema.org)</h3></div>
                             <ul class="category-details">
-                                <li>Affichage d'encarts d'information structurés</li>
-                                <li>Réponses directes aux questions</li>
+                                <li>Utilisation de balises sémantiques pour décrire les produits (Prix, Stock, Avis).</li>
+                                <li>Permet aux moteurs de comparer automatiquement les offres et d'afficher les étoiles dans les résultats.</li>
                             </ul>
                         </div>
+
+                        <!-- Santé / Science -->
                         <div class="application-category">
-                            <div class="category-header"><i class="fas fa-shopping-cart"></i><h3>E-Commerce</h3></div>
+                            <div class="category-header"><i class="fas fa-dna"></i><h3>Santé & Recherche Scientifique</h3></div>
                             <ul class="category-details">
-                                <li>Comparateurs de prix précis</li>
-                                <li>Recommandations contextuelles</li>
+                                <li><strong>Interopérabilité :</strong> Faire communiquer des bases de données d'hôpitaux différents.</li>
+                                <li>Unification des vocabulaires médicaux pour l'aide au diagnostic (ex: SNOMED CT).</li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
