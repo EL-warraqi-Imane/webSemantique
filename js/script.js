@@ -370,6 +370,7 @@ window.presentation = {
     startAuto: startAutoPresentation,
     toggleFullscreen: toggleFullscreen
 };
+<<<<<<< HEAD
 // Animations pour le slide 8
 function initSlide8Animations() {
     const slide8 = document.getElementById('slide8');
@@ -520,6 +521,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+=======
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 
 // Message de bienvenue dans la console
 console.log('%c🎯 Présentation Web Sémantique', 'color: #667eea; font-size: 18px; font-weight: bold;');

@@ -85,6 +85,7 @@ Le Web sémantique repose sur quatre piliers conceptuels :
 
 ---
 
+<<<<<<< HEAD
 ## 6. Technologies associées
 
 L'architecture technique repose sur des standards du W3C :
@@ -116,6 +117,38 @@ L'architecture technique repose sur des standards du W3C :
     *   Comparateurs de prix plus précis.
     *   Recommandations contextuelles basées sur les caractéristiques produits.
 
+=======
+## 6. Technologies : La Pile Sémantique
+*(Architecture en couches du W3C)*
+
+Le Web sémantique fonctionne comme une pile de technologies, du plus basique au plus intelligent :
+
+**1. La Base (Identification & Échange) :**
+*   **URI (Uniform Resource Identifier) :** Sert à nommer/coder une donnée de façon unique.
+*   **RDF (Resource Description Framework) :** Le standard pour l'échange de données. Il sert à **décrire la donnée** sous forme de graphe simple.
+
+**2. La Structure (Signification) :**
+*   **RDFS (RDF Schema) :** Une couche au-dessus de RDF pour décrire la **signification** de la donnée (définir des classes et des propriétés simples).
+
+**3. L'Intelligence (Requêtes & Ontologies) :**
+*   **SPARQL :** Le langage pour interroger ces données.
+*   **OWL :** Pour une description sémantique très poussée (règles logiques complexes).
+
+---
+
+## 7. Applications Concrètes
+
+Où trouve-t-on le Web Sémantique au quotidien ?
+
+**1. Google Knowledge Graph & SEO :**
+Google n'indexe plus seulement des mots, il comprend des "Entités". C'est ce qui permet d'avoir l'encadré d'information à droite des résultats de recherche ou les réponses directes ("Quelle est la taille de la Tour Eiffel ?").
+
+**2. E-Commerce (Schema.org) :**
+Les sites comme Amazon ou Cdiscount utilisent du marquage sémantique. Cela permet aux moteurs de comprendre qu'une page parle d'un "Produit" avec un "Prix" et une "Note", et non juste du texte.
+
+**3. Santé et Recherche :**
+C'est le domaine où l'interopérabilité est critique. Le Web sémantique permet d'unifier les dossiers patients provenant de systèmes différents et d'aider à la recherche pharmaceutique en liant des données de molécules disparates.
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 ---
 
 ## 7. Applications : Exemple détaillé

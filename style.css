@@ -1271,9 +1271,12 @@ body {
     background: #94a3b8;
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 /* Responsive */
 @media (max-width: 1024px) {
     .main-title {
@@ -1303,6 +1306,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+<<<<<<< HEAD
 /* ===== Slide 7 - Style Épuré ===== */
 #slide7 .slide-content {
     padding: 20px 30px;
@@ -1628,6 +1632,9 @@ body {
         display: none;
     }
 }
+=======
+
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 @media (max-width: 768px) {
     .slide-content {
         padding: 30px;
@@ -1734,6 +1741,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -2830,6 +2838,8 @@ body {
         font-size: 1rem;
     }
 }
+=======
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 @media (max-width: 480px) {
     .slide-content {
         padding: 20px;
