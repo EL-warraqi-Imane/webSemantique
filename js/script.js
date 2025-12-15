@@ -1,6 +1,6 @@
 // Configuration de la présentation
 const PRESENTATION_CONFIG = {
-    totalSlides: 18,
+    totalSlides: 13,
     transitionSpeed: 500,
     isFullscreen: false
 };
@@ -370,6 +370,159 @@ window.presentation = {
     startAuto: startAutoPresentation,
     toggleFullscreen: toggleFullscreen
 };
+<<<<<<< HEAD
+// Animations pour le slide 8
+function initSlide8Animations() {
+    const slide8 = document.getElementById('slide8');
+    
+    if (!slide8) return;
+    
+    // Observer pour détecter quand le slide devient visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.target.id === 'slide8') {
+                animateSlide8();
+            }
+        });
+    }, { 
+        threshold: 0.3,
+        rootMargin: '50px'
+    });
+    
+    observer.observe(slide8);
+}
+
+function animateSlide8() {
+    const slide8 = document.getElementById('slide8');
+    if (!slide8) return;
+    
+    // Animation du badge et du titre
+    const badge = slide8.querySelector('.example-badge');
+    const title = slide8.querySelector('.example-title');
+    
+    if (badge && !badge.classList.contains('animated')) {
+        badge.classList.add('animated');
+        gsap.from(badge, {
+            duration: 0.8,
+            scale: 0,
+            rotation: 360,
+            ease: "back.out(1.7)"
+        });
+    }
+    
+    if (title && !title.classList.contains('animated')) {
+        title.classList.add('animated');
+        gsap.from(title, {
+            duration: 0.8,
+            delay: 0.3,
+            y: 30,
+            opacity: 0,
+            ease: "power2.out"
+        });
+    }
+    
+    // Animation des exemples en séquence
+    const examples = slide8.querySelectorAll('.concrete-example');
+    examples.forEach((example, index) => {
+        if (!example.classList.contains('animated')) {
+            example.classList.add('animated');
+            gsap.from(example, {
+                duration: 0.8,
+                delay: 0.5 + (index * 0.3),
+                y: 50,
+                opacity: 0,
+                ease: "power2.out"
+            });
+        }
+    });
+    
+    // Animation des démonstrations
+    const demoItems = slide8.querySelectorAll('.output-item');
+    demoItems.forEach((item, index) => {
+        if (!item.classList.contains('animated')) {
+            item.classList.add('animated');
+            gsap.from(item, {
+                duration: 0.5,
+                delay: 1.5 + (index * 0.15),
+                x: -30,
+                opacity: 0,
+                ease: "power2.out"
+            });
+        }
+    });
+    
+    // Animation des nœuds du graphe
+    const graphNodes = slide8.querySelectorAll('.graph-node');
+    graphNodes.forEach((node, index) => {
+        if (!node.classList.contains('animated')) {
+            node.classList.add('animated');
+            gsap.from(node, {
+                duration: 0.6,
+                delay: 2 + (index * 0.1),
+                scale: 0,
+                ease: "back.out(1.7)"
+            });
+        }
+    });
+    
+    // Animation des connexions
+    const connections = slide8.querySelectorAll('.connection-line');
+    connections.forEach((connection, index) => {
+        if (!connection.classList.contains('animated')) {
+            connection.classList.add('animated');
+            gsap.from(connection, {
+                duration: 1,
+                delay: 2.5 + (index * 0.3),
+                scaleX: 0,
+                transformOrigin: "left center",
+                ease: "power3.out"
+            });
+        }
+    });
+    
+    // Animation des bénéfices
+    const benefits = slide8.querySelectorAll('.benefit');
+    benefits.forEach((benefit, index) => {
+        if (!benefit.classList.contains('animated')) {
+            benefit.classList.add('animated');
+            gsap.from(benefit, {
+                duration: 0.6,
+                delay: 3 + (index * 0.2),
+                y: 30,
+                opacity: 0,
+                ease: "power2.out"
+            });
+        }
+    });
+}
+
+// Intégration dans la navigation
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialiser les animations du slide 8
+    initSlide8Animations();
+    
+    // Réinitialiser les animations lors de la navigation
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    [prevBtn, nextBtn].forEach(btn => {
+        btn.addEventListener('click', function() {
+            setTimeout(() => {
+                const currentSlide = document.querySelector('.slide.active');
+                if (currentSlide && currentSlide.id === 'slide8') {
+                    // Réinitialiser les classes d'animation
+                    const animatedElements = currentSlide.querySelectorAll('.animated');
+                    animatedElements.forEach(el => el.classList.remove('animated'));
+                    
+                    // Relancer les animations
+                    setTimeout(animateSlide8, 100);
+                }
+            }, 350);
+        });
+    });
+});
+=======
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 
 // Message de bienvenue dans la console
 console.log('%c🎯 Présentation Web Sémantique', 'color: #667eea; font-size: 18px; font-weight: bold;');
