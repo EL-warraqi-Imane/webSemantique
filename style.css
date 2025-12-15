@@ -3231,3 +3231,102 @@ pre {
         font-size: 1em;
     }
 }
+/* Orientation paysage sur mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .slide-content {
+        padding: 15px;
+    }
+    
+    .main-title {
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+    
+    .subtitle {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    
+    .slide-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    
+    .divider {
+        margin: 10px auto;
+    }
+    
+    .presenters {
+        margin: 15px 0;
+        gap: 10px;
+    }
+    
+    .presenter-card {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    
+    .definition-box {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .definition-content {
+        font-size: 1em;
+    }
+}
+
+/* Support du mode plein écran */
+:fullscreen .slide-content {
+    padding: 40px;
+}
+
+:-webkit-full-screen .slide-content {
+    padding: 40px;
+}
+
+:-moz-full-screen .slide-content {
+    padding: 40px;
+}
+
+/* Amélioration du scroll sur mobile */
+.slide-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.slide-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.slide-content::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 3px;
+}
+
+.slide-content::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+/* Correction pour éviter les débordements horizontaux */
+.slide-content {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ajustement des tableaux sur mobile */
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Optimisation des transitions pour mobile */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
