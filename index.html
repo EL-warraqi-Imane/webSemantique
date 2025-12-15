@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation Web Sémantique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <button class="nav-btn" id="prevBtn">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
+        </div>
+        
+        <button class="nav-btn" id="nextBtn">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+        
+        <button class="present-btn" id="presentBtn">
+            <i class="fas fa-expand"></i> Présentation
+        </button>
+    </nav>
+
+    <!-- Slides Container -->
+    <main class="slides-container" id="slidesContainer">
+        
+        <!-- 0. Couverture -->
+        <section class="slide active" id="slide1">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="main-title">Le Web Sémantique</h1>
+                    <h2 class="subtitle">Définition, Origine, Objectifs et Technologies</h2>
+                </div>
+                <div class="slide-body">
+                    <div class="divider"></div>
+                    <p class="main-description"><strong>1. Introduction générale</strong></p>
+                    
+                    <div class="presenters">
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Abdellah BOULIDAM</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Youness BOUMLIK</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Oumaima EL ALAMI</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Zakaria EL HOUARI</span></div>
+                        <div class="presenter-card"><i class="fas fa-user"></i> <span>Imane EL WARRAQI</span></div>
+                    </div>
+                    
+                    <div class="supervisor">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Encadré par : Mme Nidal LAMGHARI</span>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">1</span></footer>
+        </section>
+
+        <!-- 1. Introduction -->
+        <section class="slide" id="slide2">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">1. Introduction générale</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="definition-box">
+                        <div class="definition-content">
+                            <p>Le <strong class="highlight">Web sémantique</strong> rend les informations compréhensibles par les machines grâce à des <strong class="highlight">métadonnées</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-brain"></i>
+                            <p>Compréhension par la machine</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-share-alt"></i>
+                            <p>Interconnexion des données</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">2</span></footer>
+        </section>
+
+        <!-- 2. Définition et comparaison -->
+        <section class="slide" id="slide3">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">2. Définition et comparaison</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="comparison-container">
+                        <div class="web-column classic-web">
+                            <div class="web-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Web Classique</h3>
+                            </div>
+                            <ul class="features-list">
+                                <li>Web de <strong>Documents</strong></li>
+                                <li>Liens hypertextes simples</li>
+                                <li>Pour les humains uniquement</li>
+                            </ul>
+                        </div>
+                        <div class="vs-separator"><span>VS</span></div>
+                        <div class="web-column semantic-web">
+                            <div class="web-header">
+                                <i class="fas fa-project-diagram"></i>
+                                <h3>Web Sémantique</h3>
+                            </div>
+                            <ul class="features-list">
+                                <li>Web de <strong>Données</strong></li>
+                                <li>Relations sémantiques</li>
+                                <li>Exploitable par les machines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">3</span></footer>
+        </section>
+
+        <!-- 3. Origine et évolution -->
+        <section class="slide" id="slide4">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">3. Origine et évolution</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"><span class="timeline-number">1.0</span></div>
+                            <div class="timeline-content"><h4>Web Statique</h4><p>Documents HTML</p></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"><span class="timeline-number">2.0</span></div>
+                            <div class="timeline-content"><h4>Web Social</h4><p>Interaction & Contenu</p></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"><span class="timeline-number">3.0</span></div>
+                            <div class="timeline-content"><h4>Web Sémantique</h4><p>Données liées</p></div>
+                        </div>
+                    </div>
+                    <div class="vision-grid" style="margin-top: 30px;">
+                        <div class="vision-item">
+                            <i class="fas fa-user-astronaut"></i>
+                            <div>
+                                <h4>Vision de Tim Berners-Lee</h4>
+                                <p>Transformer le Web en une base de données globale où les agents logiciels peuvent "raisonner".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">4</span></footer>
+        </section>
+
+        <!-- 4. Pourquoi le Web sémantique ? (Problèmes) -->
+        <section class="slide" id="slide5">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">4. Pourquoi le Web sémantique ?</h1>
+                    <h3 class="subtitle">Les problèmes du Web actuel</h3>
+                </div>
+                <div class="slide-body">
+                    <div class="problems-grid">
+                        <div class="problem-item">
+                            <i class="fas fa-search-minus"></i>
+                            <div>
+                                <h4>Recherche par mots-clés</h4>
+                                <p>Manque de précision et ambiguïté (ex: "Jaguar" : animal ou voiture ?).</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <h4>Données en silos</h4>
+                                <p>Information non structurée et difficile à croiser automatiquement.</p>
+                            </div>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>Aveuglement machine</h4>
+                                <p>L'ordinateur affiche le contenu mais ne comprend pas sa signification.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">5</span></footer>
+        </section>
+
+        <!-- 4. Pourquoi le Web sémantique ? (Objectifs) -->
+        <section class="slide" id="slide6">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">4. Pourquoi le Web sémantique ?</h1>
+                    <h3 class="subtitle">Besoins et Objectifs</h3>
+                </div>
+                <div class="slide-body">
+                    <div class="needs-grid">
+                        <div class="need-item">
+                            <div class="need-header"><i class="fas fa-exchange-alt"></i><h4>Interopérabilité</h4></div>
+                            <p>Permettre aux différents systèmes de partager et réutiliser les données.</p>
+                        </div>
+                        <div class="need-item">
+                            <div class="need-header"><i class="fas fa-cogs"></i><h4>Automatisation</h4></div>
+                            <p>Permettre aux agents logiciels d'exécuter des tâches complexes.</p>
+                        </div>
+                        <div class="need-item">
+                            <div class="need-header"><i class="fas fa-bullseye"></i><h4>Précision</h4></div>
+                            <p>Recherche contextuelle et réponses exactes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">6</span></footer>
+        </section>
+
+        <!-- 5. Principes et concepts clés -->
+     <section class="slide" id="slide7">
+    <div class="slide-content">
+        <div class="slide-header">
+            <h1 class="slide-title">5.Principes et concepts clés</h1>
+        </div>
+        
+        <div class="slide-body">
+            <div class="definition-section">
+                <div class="definition-block">
+                    <h3 class="definition-title">Le principe fondamental</h3>
+                    <p class="definition-text">
+                        Le Web sémantique permet aux machines de <strong>comprendre et exploiter le sens des données</strong> 
+                        en ajoutant des <strong>métadonnées</strong> et des <strong>relations sémantiques</strong>.
+                    </p>
+                </div>
+            </div>
+            
+           <div class="knowledge-graph-section">
+                <h3 class="graph-main-title">Structure d'un graphe de connaissances</h3>
+                
+                <div class="knowledge-graph-container">
+
+    <!-- Nœuds -->
+    <div class="nodes-container">
+        <div class="node-row top-row">
+            <div class="graph-node">
+                <span class="node-label">Personne</span>
+            </div>
+
+            <div class="graph-node">
+                <span class="node-label">Objet</span>
+            </div>
+        </div>
+
+        <div class="node-row bottom-row">
+            <div class="graph-node">
+                <span class="node-label">Concept</span>
+            </div>
+
+            <div class="graph-node">
+                <span class="node-label">Lieu</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Relations / Flèches -->
+    <div class="connections-container">
+
+        <!-- Personne → Objet -->
+        <div class="arrow-horizontal arrow-top">
+            <div class="arrow-line"></div>
+            <div class="arrow-head"></div>
+            <div class="relation-label">auteurDe</div>
+        </div>
+
+        <!-- Objet → Concept -->
+        <div class="arrow-horizontal arrow-bottom">
+            <div class="arrow-line"></div>
+            <div class="arrow-head"></div>
+            <div class="relation-label">typeDe</div>
+        </div>
+
+        <!-- Objet → Concept (vertical gauche) -->
+        <div class="arrow-vertical left-arrow">
+            <div class="arrow-line-vertical"></div>
+            <div class="arrow-head-vertical"></div>
+            <div class="relation-label">appartientÀ</div>
+        </div>
+
+        <!-- Objet → Lieu (vertical droite) -->
+        <div class="arrow-vertical right-arrow">
+            <div class="arrow-line-vertical"></div>
+            <div class="arrow-head-vertical"></div>
+            <div class="relation-label">estLocaliséÀ</div>
+        </div>
+
+    </div>
+</div>
+
+                <!-- Légende -->
+                <div class="graph-legend-simple">
+                    <div class="legend-item">
+                        <div class="legend-node-symbol"></div>
+                        <span>Nœuds : Ressources</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-arrow-symbol"></div>
+                        <span>Arêtes : Relations</span>
+                    </div>
+                </div>
+            </div>
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="principle-title">Rôle des métadonnées</h3>
+                    <p class="principle-description">
+                        Ajoutent du sens aux données en décrivant leur structure, leur contenu et leur contexte.
+                    </p>
+                    <div class="principle-example">
+                        <strong>Exemple :</strong> Dublin Core, Schema.org, RDF
+                    </div>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="principle-title">Relations sémantiques</h3>
+                    <p class="principle-description">
+                        Créent des liens significatifs entre les entités, permettant l'inférence et le raisonnement.
+                    </p>
+                    <div class="principle-example">
+                        <strong>Exemple :</strong> "estParentDe", "travaillePour", "localiséÀ"
+                    </div>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="principle-title">Graphes de connaissances</h3>
+                    <p class="principle-description">
+                        Représentent les connaissances sous forme de réseaux interconnectés de nœuds et de relations.
+                    </p>
+                    <div class="principle-example">
+                        <strong>Exemple :</strong> Google Knowledge Graph, Wikidata
+                    </div>
+                </div>
+                
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="principle-title">Raisonnement machine</h3>
+                    <p class="principle-description">
+                        Permet aux systèmes de déduire de nouvelles informations à partir des données existantes.
+                    </p>
+                    <div class="principle-example">
+                        <strong>Exemple :</strong> Inférence OWL, moteurs de règles
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="slide-footer">
+        <span class="slide-number">7</span>
+    </footer>
+</section>
+<!-- 6. Exemples Concrets -->
+<section class="slide" id="slide8">
+    <div class="slide-content">
+        <div class="slide-header">
+            <h1 class="slide-title">6. Exemples Concrets</h1>
+            <h3 class="subtitle">Applications pratiques du Web sémantique</h3>
+        </div>
+        
+        <div class="slide-body">
+            <!-- Section principale exemple -->
+            <div class="example-hero">
+                <div class="example-badge">
+                    <i class="fas fa-lightbulb"></i>
+                    EXEMPLE CONCRET
+                </div>
+                <h2 class="example-title">Recherche intelligente dans le cinéma</h2>
+                <p class="example-intro">
+                    Comment le Web sémantique transforme une recherche simple en résultats riches et contextuels
+                </p>
+            </div>
+
+            <!-- Grille des 3 principaux concepts -->
+            <div class="concrete-examples-grid">
+                <!-- Recherche intelligente -->
+                <div class="concrete-example">
+                    <div class="example-number">01</div>
+                    <div class="example-content">
+                        <div class="example-header">
+                            <div class="example-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                            <h3 class="example-card-title">Recherche intelligente</h3>
+                        </div>
+                        <p class="example-description">
+                            Le Web sémantique permet une recherche qui comprend le contexte et fournit des résultats structurés, pas seulement des mots-clés.
+                        </p>
+                        
+                        <div class="example-demo">
+                            <div class="demo-input">
+                                <div class="input-label">Recherche traditionnelle :</div>
+                                <div class="input-box">
+                                    <i class="fas fa-keyboard"></i>
+                                    <span>"films Christopher Nolan Inception"</span>
+                                </div>
+                            </div>
+                            
+                            <div class="demo-arrow">
+                                <i class="fas fa-long-arrow-alt-down"></i>
+                                <span>Web Sémantique</span>
+                            </div>
+                            
+                            <div class="demo-output">
+                                <div class="output-label">Résultat enrichi :</div>
+                                <div class="output-box">
+                                    <div class="output-item">
+                                        <i class="fas fa-film"></i>
+                                        <strong>Film :</strong> Inception (2010)
+                                    </div>
+                                    <div class="output-item">
+                                        <i class="fas fa-user-tie"></i>
+                                        <strong>Réalisateur :</strong> Christopher Nolan
+                                    </div>
+                                    <div class="output-item">
+                                        <i class="fas fa-star"></i>
+                                        <strong>Acteurs :</strong> Leonardo DiCaprio, Joseph Gordon-Levitt
+                                    </div>
+                                    <div class="output-item">
+                                        <i class="fas fa-tags"></i>
+                                        <strong>Genre :</strong> Science-fiction, Thriller
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compréhension des relations -->
+                <div class="concrete-example">
+                    <div class="example-number">02</div>
+                    <div class="example-content">
+                        <div class="example-header">
+                            <div class="example-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="example-card-title">Compréhension des relations</h3>
+                        </div>
+                        <p class="example-description">
+                            Les graphes de connaissances aident à relier des entités comme réalisateurs, films, dates et acteurs pour enrichir les résultats.
+                        </p>
+                        
+                        <div class="relationship-graph">
+                            <div class="graph-diagram">
+                                <div class="graph-node main">
+                                    <span>Christopher Nolan</span>
+                                    <div class="node-type">Réalisateur</div>
+                                </div>
+                                
+                                <div class="graph-connections">
+                                    <div class="connection">
+                                        <div class="connection-line"></div>
+                                        <div class="connection-label">a réalisé</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="graph-column">
+                                    <div class="graph-node">
+                                        <span>Inception</span>
+                                        <div class="node-type">Film (2010)</div>
+                                    </div>
+                                    <div class="graph-node">
+                                        <span>Interstellar</span>
+                                        <div class="node-type">Film (2014)</div>
+                                    </div>
+                                    <div class="graph-node">
+                                        <span>The Dark Knight</span>
+                                        <div class="node-type">Film (2008)</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="graph-connections secondary">
+                                    <div class="connection">
+                                        <div class="connection-line"></div>
+                                        <div class="connection-label">avec</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="graph-column actors">
+                                    <div class="graph-node actor">
+                                        <span>L. DiCaprio</span>
+                                        <div class="node-type">Acteur</div>
+                                    </div>
+                                    <div class="graph-node actor">
+                                        <span>M. McConaughey</span>
+                                        <div class="node-type">Acteur</div>
+                                    </div>
+                                    <div class="graph-node actor">
+                                        <span>H. Ledger</span>
+                                        <div class="node-type">Acteur</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Raisonnement machine -->
+                <div class="concrete-example">
+                    <div class="example-number">03</div>
+                    <div class="example-content">
+                        <div class="example-header">
+                            <div class="example-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="example-card-title">Raisonnement machine</h3>
+                        </div>
+                        <p class="example-description">
+                            La technologie permet aux machines de raisonner sur les données plutôt que de se baser uniquement sur la correspondance textuelle.
+                        </p>
+                        
+                        <div class="reasoning-process">
+                            <div class="reasoning-step">
+                                <div class="step-header">
+                                    <span class="step-number">1</span>
+                                    <span class="step-title">Faits connus :</span>
+                                </div>
+                                <div class="step-facts">
+                                    <div class="fact">
+                                        <i class="fas fa-check-circle"></i>
+                                        Christopher Nolan est un réalisateur
+                                    </div>
+                                    <div class="fact">
+                                        <i class="fas fa-check-circle"></i>
+                                        Inception est un film
+                                    </div>
+                                    <div class="fact">
+                                        <i class="fas fa-check-circle"></i>
+                                        Nolan a réalisé Inception
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reasoning-arrow">
+                                <i class="fas fa-cogs"></i>
+                                <span>Processus d'inférence</span>
+                            </div>
+                            
+                            <div class="reasoning-step">
+                                <div class="step-header">
+                                    <span class="step-number">2</span>
+                                    <span class="step-title">Déductions possibles :</span>
+                                </div>
+                                <div class="step-deductions">
+                                    <div class="deduction">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <strong>Si un utilisateur aime les films de Nolan</strong>
+                                        <span class="deduction-result">→ Recommander Interstellar</span>
+                                    </div>
+                                    <div class="deduction">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <strong>Si un utilisateur cherche des thrillers SF</strong>
+                                        <span class="deduction-result">→ Proposer Inception</span>
+                                    </div>
+                                    <div class="deduction">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <strong>Si un utilisateur aime DiCaprio</strong>
+                                        <span class="deduction-result">→ Afficher tous leurs films communs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bénéfices résumés -->
+            <div class="benefits-summary">
+                <h3 class="summary-title">Avantages concrets</h3>
+                <div class="benefits-list">
+                    <div class="benefit">
+                        <i class="fas fa-bullseye"></i>
+                        <div>
+                            <h4>Précision accrue</h4>
+                            <p>Résultats pertinents et structurés</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-random"></i>
+                        <div>
+                            <h4>Découvertes enrichies</h4>
+                            <p>Connexions entre données apparentées</p>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-robot"></i>
+                        <div>
+                            <h4>Automatisation intelligente</h4>
+                            <p>Capacité de raisonnement et d'inférence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="slide-footer">
+        <span class="slide-number">8</span>
+    </footer>
+</section>
+        <!-- 6. Technologies associées -->
+        <section class="slide" id="slide9">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">7. Technologies associées</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="technologies-container">
+                        <!-- RDF -->
+                        <div class="technology-item">
+                            <div class="tech-header">
+                                <div class="tech-icon"><i class="fas fa-cube"></i></div>
+                                <h3>RDF (Resource Description Framework)</h3>
+                            </div>
+                            <div class="tech-details">
+                                <p>Modèle de base sous forme de triplets : <strong>Sujet - Prédicat - Objet</strong>.</p>
+                                <div class="code-block">&lt;Film&gt; &lt;aPourRéalisateur&gt; &lt;Nolan&gt;</div>
+                            </div>
+                        </div>
+                        <!-- SPARQL -->
+                        <div class="technology-item">
+                            <div class="tech-header">
+                                <div class="tech-icon"><i class="fas fa-database"></i></div>
+                                <h3>SPARQL</h3>
+                            </div>
+                            <div class="tech-details">
+                                <p>Langage de requête pour interroger les bases de données RDF.</p>
+                            </div>
+                        </div>
+                        <!-- OWL -->
+                        <div class="technology-item">
+                            <div class="tech-header">
+                                <div class="tech-icon"><i class="fas fa-sitemap"></i></div>
+                                <h3>OWL (Web Ontology Language)</h3>
+                            </div>
+                            <div class="tech-details">
+                                <p>Langage pour définir des ontologies complexes et des règles logiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">9</span></footer>
+        </section>
+
+        <!-- 7. Applications et cas d’usage -->
+        <section class="slide" id="slide10">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">8. Applications et cas d’usage</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="detailed-applications">
+                        <div class="application-category">
+                            <div class="category-header"><i class="fas fa-heartbeat"></i><h3>Santé</h3></div>
+                            <ul class="category-details">
+                                <li>Interopérabilité des dossiers médicaux</li>
+                                <li>Aide au diagnostic par IA sémantique</li>
+                            </ul>
+                        </div>
+                        <div class="application-category">
+                            <div class="category-header"><i class="fas fa-search"></i><h3>Google Knowledge Graph</h3></div>
+                            <ul class="category-details">
+                                <li>Affichage d'encarts d'information structurés</li>
+                                <li>Réponses directes aux questions</li>
+                            </ul>
+                        </div>
+                        <div class="application-category">
+                            <div class="category-header"><i class="fas fa-shopping-cart"></i><h3>E-Commerce</h3></div>
+                            <ul class="category-details">
+                                <li>Comparateurs de prix précis</li>
+                                <li>Recommandations contextuelles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">10</span></footer>
+        </section>
+
+        <!-- 7. Applications (Exemple détaillé) -->
+        <section class="slide" id="slide11">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">8. Applications</h1>
+                    <h3 class="subtitle">Exemple : Web des données ouvertes (LOD)</h3>
+                </div>
+                <div class="slide-body">
+                    <div class="example-details">
+                        <div class="example-item">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <h4>Linked Open Data</h4>
+                                <p>DBpedia, Wikidata : Des bases de connaissances géantes, libres et interconnectées.</p>
+                            </div>
+                        </div>
+                        <div class="example-item">
+                            <i class="fas fa-magic"></i>
+                            <div>
+                                <h4>Innovation</h4>
+                                <p>Permet de créer des applications combinant météo, transport et événements sans créer de nouvelle base de données.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">11</span></footer>
+        </section>
+
+        <!-- 8. Limites et défis -->
+        <section class="slide" id="slide12">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">9. Limites et défis</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="problems-grid">
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-hard-hat" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Complexité technique</h4>
+                                <p>Créer et maintenir des ontologies (OWL) est difficile et coûteux.</p>
+                            </div>
+                        </div>
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-users-slash" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Adoption lente</h4>
+                                <p>Manque d'experts qualifiés et investissement initial important pour les entreprises.</p>
+                            </div>
+                        </div>
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-balance-scale" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Qualité des données</h4>
+                                <p>Gérer la cohérence et la véracité des données provenant de sources multiples.</p>
+                            </div>
+                        </div>
+                        <div class="problem-item" style="border-left-color: #f59e0b;">
+                            <i class="fas fa-bolt" style="color: #f59e0b;"></i>
+                            <div>
+                                <h4>Performance</h4>
+                                <p>Le raisonnement sur des milliards de triplets nécessite une grande puissance de calcul.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">12</span></footer>
+        </section>
+
+        <!-- 9. Perspectives et Conclusion -->
+        <section class="slide" id="slide13">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">10. Perspectives et Conclusion</h1>
+                </div>
+                <div class="slide-body">
+                    <div class="perspectives-grid">
+                        <div class="perspective-item">
+                            <i class="fas fa-robot"></i>
+                            <h4>Web Autonome</h4>
+                            <p>Des agents logiciels qui effectuent des tâches (réservations, achats) sans intervention humaine.</p>
+                        </div>
+                        <div class="perspective-item">
+                            <i class="fas fa-brain"></i>
+                            <h4>Convergence IA</h4>
+                            <p>Le Web Sémantique fournit la "connaissance" structurée nécessaire au Deep Learning.</p>
+                        </div>
+                        <div class="perspective-item">
+                            <i class="fas fa-globe"></i>
+                            <h4>Web 4.0</h4>
+                            <p>L'internet des objets (IoT) intelligent et interconnecté.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">13</span></footer>
+        </section>
+
+        <!-- Slide Fin -->
+        <section class="slide" id="slide14">
+            <div class="slide-content">
+                <div class="slide-body">
+                    <div class="final-statement">
+                        <div class="statement-text">
+                            <h3>Merci de votre attention</h3>
+                            <p style="margin-top: 20px;">Avez-vous des questions ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">14</span></footer>
+        </section>
+
+    </main>
+
+    <!-- Slide Navigation Dots -->
+    <div class="slide-dots" id="slideDots"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
