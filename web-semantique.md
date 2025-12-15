@@ -85,6 +85,39 @@ Le Web sémantique repose sur quatre piliers conceptuels :
 
 ---
 
+<<<<<<< HEAD
+## 6. Technologies associées
+
+L'architecture technique repose sur des standards du W3C :
+
+### 1. RDF (Resource Description Framework)
+*   Modèle de base pour l'échange de données.
+*   Structure en **Triplets** : *Sujet - Prédicat - Objet*.
+*   *Exemple :* `<Film> <aPourRéalisateur> <Christopher Nolan>`.
+
+### 2. SPARQL
+*   Langage de requête standard pour interroger les bases de données RDF.
+*   L'équivalent du SQL pour le Web Sémantique.
+
+### 3. OWL (Web Ontology Language)
+*   Langage pour définir des ontologies complexes.
+*   Permet de décrire les propriétés, les classes et les contraintes logiques.
+
+---
+
+## 7. Applications et cas d’usage
+
+*   **Santé :**
+    *   Interopérabilité des dossiers médicaux électroniques.
+    *   Systèmes d'aide au diagnostic basés sur des bases de connaissances médicales.
+*   **Google Knowledge Graph :**
+    *   Affichage d'encarts d'information structurés (à droite des résultats de recherche).
+    *   Réponses directes aux questions factuelles.
+*   **E-Commerce :**
+    *   Comparateurs de prix plus précis.
+    *   Recommandations contextuelles basées sur les caractéristiques produits.
+
+=======
 ## 6. Technologies : La Pile Sémantique
 *(Architecture en couches du W3C)*
 
@@ -115,6 +148,7 @@ Les sites comme Amazon ou Cdiscount utilisent du marquage sémantique. Cela perm
 
 **3. Santé et Recherche :**
 C'est le domaine où l'interopérabilité est critique. Le Web sémantique permet d'unifier les dossiers patients provenant de systèmes différents et d'aider à la recherche pharmaceutique en liant des données de molécules disparates.
+>>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 ---
 
 ## 7. Applications : Exemple détaillé
