@@ -6,6 +6,7 @@
     <title>Présentation Web Sémantique</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
     <!-- Navigation -->
@@ -15,7 +16,7 @@
         </button>
         
         <div class="slide-counter">
-            <span id="currentSlide">1</span> / <span id="totalSlides">13</span>
+            <span id="currentSlide">1</span> / <span id="totalSlides">14</span>
         </div>
         
         <button class="nav-btn" id="nextBtn">
@@ -30,7 +31,7 @@
     <!-- Slides Container -->
     <main class="slides-container" id="slidesContainer">
         
-        <!-- 0. Couverture -->
+        <!-- 1. Couverture -->
         <section class="slide active" id="slide1">
             <div class="slide-content">
                 <div class="slide-header">
@@ -62,7 +63,7 @@
             <footer class="slide-footer"><span class="slide-number">1</span></footer>
         </section>
 
-        <!-- 1. Introduction -->
+        <!-- 2. Introduction -->
         <section class="slide" id="slide2">
             <div class="slide-content">
                 <div class="slide-header">
@@ -98,7 +99,7 @@
             <footer class="slide-footer"><span class="slide-number">2</span></footer>
         </section>
 
-        <!-- 2. Définition et comparaison -->
+        <!-- 3. Définition et comparaison -->
         <section class="slide" id="slide3">
             <div class="slide-content">
                 <div class="slide-header">
@@ -143,7 +144,7 @@
             <footer class="slide-footer"><span class="slide-number">3</span></footer>
         </section>
 
-        <!-- 3. Origine et évolution -->
+        <!-- 4. Origine et évolution -->
         <section class="slide" id="slide4">
             <div class="slide-content">
                 <div class="slide-header">
@@ -191,7 +192,7 @@
             <footer class="slide-footer"><span class="slide-number">4</span></footer>
         </section>
 
-        <!-- 4. Pourquoi le Web sémantique ? (Problèmes) -->
+        <!-- 5. Pourquoi le Web sémantique ? (Problèmes) -->
         <section class="slide" id="slide5">
             <div class="slide-content">
                 <div class="slide-header">
@@ -227,7 +228,7 @@
             <footer class="slide-footer"><span class="slide-number">5</span></footer>
         </section>
 
-        <!-- 5. Pourquoi le Web sémantique ? (Objectifs) -->
+        <!-- 6. Pourquoi le Web sémantique ? (Objectifs) -->
         <section class="slide" id="slide6">
             <div class="slide-content">
                 <div class="slide-header">
@@ -254,7 +255,7 @@
             <footer class="slide-footer"><span class="slide-number">6</span></footer>
         </section>
 
-        <!-- 6. Principes et concepts clés -->
+        <!-- 7. Principes et concepts clés -->
         <section class="slide" id="slide7">
             <div class="slide-content">
                 <div class="slide-header">
@@ -392,7 +393,7 @@
             </footer>
         </section>
 
-        <!-- 7. Exemples Concrets -->
+        <!-- 8. Exemples Concrets -->
         <section class="slide" id="slide8">
             <div class="slide-content">
                 <div class="slide-header">
@@ -635,7 +636,7 @@
             </footer>
         </section>
 
-        <!-- 8. Technologies associées -->
+        <!-- 9. Technologies associées -->
         <section class="slide" id="slide9">
             <div class="slide-content">
                 <div class="slide-header">
@@ -689,7 +690,7 @@
             <footer class="slide-footer"><span class="slide-number">9</span></footer>
         </section>
 
-        <!-- 9. Applications et cas d'usage -->
+        <!-- 10. Applications et cas d'usage -->
         <section class="slide" id="slide10">
             <div class="slide-content">
                 <div class="slide-header">
@@ -730,7 +731,7 @@
             <footer class="slide-footer"><span class="slide-number">10</span></footer>
         </section>
 
-        <!-- 10. Applications (Exemple détaillé) -->
+        <!-- 11. Applications (Exemple détaillé) -->
         <section class="slide" id="slide11">
             <div class="slide-content">
                 <div class="slide-header">
@@ -759,7 +760,7 @@
             <footer class="slide-footer"><span class="slide-number">11</span></footer>
         </section>
 
-        <!-- 11. Les Défis -->
+        <!-- 12. Les Défis -->
         <section class="slide" id="slide12">
             <div class="slide-content">
                 <div class="slide-header">
@@ -805,7 +806,7 @@
             <footer class="slide-footer"><span class="slide-number">12</span></footer>
         </section>
 
-        <!-- 12. Conclusion -->
+        <!-- 13. Conclusion -->
         <section class="slide" id="slide13">
             <div class="slide-content">
                 <div class="slide-header">
@@ -846,6 +847,108 @@
             </div>
             <footer class="slide-footer"><span class="slide-number">13</span></footer>
         </section>
+
+        <!-- 14. Démonstration RDF/SPARQL (Nouvelle slide ajoutée APRÈS la conclusion) -->
+        <section class="slide" id="slide14">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <h1 class="slide-title">Démonstration Pratique</h1>
+                    <h3 class="subtitle">Implémentation RDF/SPARQL avec Python</h3>
+                </div>
+                <div class="slide-body">
+                    <div class="demo-container">
+                        <div class="demo-column">
+                            <h3><i class="fas fa-code"></i> Installation et Configuration</h3>
+                            <div class="code-example">
+                                <pre>pip install rdflib
+from rdflib import Graph, Namespace, RDF, Literal</pre>
+                            </div>
+                            <p><strong>Création du graphe RDF :</strong></p>
+                            <div class="code-example">
+                                <pre>g = Graph()
+EX = Namespace("http://example.org/")
+g.bind("ex", EX)
+
+# Définir les ressources
+etudiant1 = EX.Ahmed
+etudiant2 = EX.Sara
+module1 = EX.WebSemantique</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-column">
+                            <h3><i class="fas fa-database"></i> Ajout des Triple RDF</h3>
+                            <div class="rdf-triplets">
+                                <div class="triplet">
+                                    <span class="subject">&lt;Ahmed&gt;</span>
+                                    <span class="predicate">rdf:type</span>
+                                    <span class="object">&lt;Etudiant&gt;</span>
+                                </div>
+                                <div class="triplet">
+                                    <span class="subject">&lt;Sara&gt;</span>
+                                    <span class="predicate">rdf:type</span>
+                                    <span class="object">&lt;Etudiant&gt;</span>
+                                </div>
+                                <div class="triplet">
+                                    <span class="subject">&lt;Ahmed&gt;</span>
+                                    <span class="predicate">suit</span>
+                                    <span class="object">&lt;WebSemantique&gt;</span>
+                                </div>
+                                <div class="triplet">
+                                    <span class="subject">&lt;Sara&gt;</span>
+                                    <span class="predicate">suit</span>
+                                    <span class="object">&lt;WebSemantique&gt;</span>
+                                </div>
+                            </div>
+                            <div class="code-example">
+                                <pre># Code Python correspondant
+g.add((etudiant1, RDF.type, EX.Etudiant))
+g.add((etudiant2, RDF.type, EX.Etudiant))
+g.add((etudiant1, EX.suit, module1))
+g.add((etudiant2, EX.suit, module1))</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-column">
+                            <h3><i class="fas fa-search"></i> Requête SPARQL</h3>
+                            <div class="sparql-query">
+                                <pre>PREFIX ex: &lt;http://example.org/&gt;
+
+SELECT ?etudiant
+WHERE {
+    ?etudiant ex:suit ex:WebSemantique .
+}</pre>
+                            </div>
+                            <div class="results">
+                                <h4>Résultats de la requête :</h4>
+                                <table>
+                                    <tr><th>Étudiant</th><th>URI</th></tr>
+                                    <tr><td>Ahmed</td><td>http://example.org/Ahmed</td></tr>
+                                    <tr><td>Sara</td><td>http://example.org/Sara</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-takeaways">
+                        <h4>Ce que cette démonstration illustre :</h4>
+                        <div class="takeaway-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Structuration des données :</strong> RDF organise l'information en triplets (sujet-prédicat-objet) compréhensibles par les machines</span>
+                        </div>
+                        <div class="takeaway-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Interrogation sémantique :</strong> SPARQL permet des requêtes intelligentes basées sur le sens, pas juste sur le texte</span>
+                        </div>
+                        <div class="takeaway-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Interopérabilité :</strong> Le même graphe RDF peut être utilisé par différentes applications sans perte de sens</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="slide-footer"><span class="slide-number">14</span></footer>
+        </section>
     </main>
 
     <!-- Slide Navigation Dots -->
@@ -854,7 +957,7 @@
     <script>
         // Variables globales
         let currentSlide = 1;
-        const totalSlides = 13;
+        const totalSlides = 14;
         const slides = document.querySelectorAll('.slide');
         
         // Fonction pour afficher une slide spécifique

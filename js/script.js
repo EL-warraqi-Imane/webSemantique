@@ -1,4 +1,5 @@
 // Configuration de la présentation
+
 const PRESENTATION_CONFIG = {
     totalSlides: 13,
     transitionSpeed: 500,
