@@ -875,48 +875,175 @@ body {
     font-size: 1.1em;
 }
 
-/* Slide 14 - Principes */
+/* Slide 14 - Principes (optimisé pour 100% zoom) */
 .principles-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin-top: 40px;
+    gap: 35px; /* Augmenté pour meilleur espacement */
+    max-width: 1300px; /* Légèrement augmenté */
+    margin: 45px auto 30px; /* Marge équilibrée */
+    padding: 0 25px;
+}
+.centered-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .principle-item {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    border: 2px solid #e0e7ff;
-    transition: all 0.3s ease;
+    padding: 35px; /* Augmenté pour plus d'espace */
+    border-radius: 18px; /* Légèrement arrondi */
+    border: 3px solid #e0e7ff; /* Bordure plus épaisse */
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Ombre plus douce */
+    min-height: 220px; /* Hauteur minimale */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .principle-item:hover {
-    transform: translateY(-5px);
-    border-color: #667eea;
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.1);
+    transform: translateY(-8px); /* Animation plus marquée */
+    border-color: #4f46e5; /* Couleur plus intense */
+    box-shadow: 0 15px 35px rgba(79, 70, 229, 0.15); /* Ombre plus prononcée */
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
 .principle-item h4 {
-    color: #1a2980;
-    font-size: 1.4em;
-    margin-bottom: 15px;
+    color: #1e293b; /* Couleur plus foncée pour meilleur contraste */
+    font-size: 22px; /* Taille fixe pour 100% zoom */
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px; /* Plus d'espace entre icône et texte */
+    font-weight: 700; /* Plus épais */
+    line-height: 1.4;
 }
 
 .principle-item h4 i {
-    color: #667eea;
+    color: #4f46e5; /* Couleur plus vive */
+    font-size: 26px; /* Taille d'icône augmentée */
+    background: #eef2ff; /* Fond pour l'icône */
+    padding: 12px;
+    border-radius: 12px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.principle-item:hover h4 i {
+    background: #4f46e5;
+    color: white;
+    transform: scale(1.1);
 }
 
 .principle-item p {
-    color: #4b5563;
-    line-height: 1.6;
-    font-size: 1.1em;
+    color: #475569; /* Gris légèrement plus foncé */
+    line-height: 1.7; /* Meilleure hauteur de ligne */
+    font-size: 17px; /* Taille optimale pour lecture */
+    flex-grow: 1;
+    margin-top: 10px;
 }
 
+/* Animation d'entrée */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.principle-item {
+    animation: fadeInScale 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.principle-item:nth-child(1) { animation-delay: 0.1s; }
+.principle-item:nth-child(2) { animation-delay: 0.2s; }
+.principle-item:nth-child(3) { animation-delay: 0.3s; }
+.principle-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive pour 100% zoom */
+@media (max-width: 1024px) {
+    .principles-grid {
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .principle-item {
+        padding: 30px;
+        min-height: 200px;
+    }
+    
+    .principle-item h4 {
+        font-size: 20px;
+    }
+    
+    .principle-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .principles-grid {
+        grid-template-columns: 1fr; /* Une colonne sur mobile */
+        gap: 25px;
+        margin: 35px auto 25px;
+        padding: 0 15px;
+    }
+    
+    .principle-item {
+        padding: 25px;
+        min-height: auto;
+        border-radius: 15px;
+    }
+    
+    .principle-item h4 {
+        font-size: 19px;
+        gap: 12px;
+    }
+    
+    .principle-item h4 i {
+        font-size: 22px;
+        padding: 10px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .principle-item p {
+        font-size: 15.5px;
+        line-height: 1.65;
+    }
+}
+
+/* Effet de focus pour accessibilité */
+.principle-item:focus-within {
+    outline: 3px solid #4f46e5;
+    outline-offset: 3px;
+}
+
+/* Amélioration pour contraste */
+@media (prefers-contrast: high) {
+    .principle-item {
+        border: 3px solid #000000;
+    }
+    
+    .principle-item h4 {
+        color: #000000;
+    }
+    
+    .principle-item p {
+        color: #1f2937;
+    }
+}
 /* Slide 15 - Exemple */
 .example-details {
     display: grid;
@@ -3060,8 +3187,6 @@ pre {
         font-size: 1rem;
     }
 }
-=======
->>>>>>> c3f9464b794297d0c8fa35cd28c313aa616bacbb
 @media (max-width: 480px) {
     .slide-content {
         padding: 20px;
